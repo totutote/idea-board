@@ -1,33 +1,18 @@
 <?php
 
-/**
- * The Top Controller.
- *
- * @package  app
- * @extends  Controller
- */
-class Controller_Top extends Controller_Application
+class Controller_Top extends Controller_Template
 {
 
-	/**
-	 * The basic welcome message
-	 * 
-	 * @access  public
-	 * @return  Response
-	 */
 	public function action_index()
 	{
-		return Response::forge(View::forge('welcome/index'));
+		$this->template->title = 'Top &raquo; Index';
+		$this->template->content = View::forge('top/index');
 	}
 
-	/**
-	 * The 404 action for the application.
-	 * 
-	 * @access  public
-	 * @return  Response
-	 */
-	public function action_404()
+	public function action_ranking()
 	{
-		return Response::forge(ViewModel::forge('welcome/404'), 404);
+		$this->template->title = 'Top &raquo; Ranking';
+		$this->template->content = View::forge('top/ranking');
 	}
+
 }
