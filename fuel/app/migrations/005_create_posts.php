@@ -2,14 +2,14 @@
 
 namespace Fuel\Migrations;
 
-class Create_idea_comments
+class Create_posts
 {
 	public function up()
 	{
-		\DBUtil::create_table('idea_comments', array(
+		\DBUtil::create_table('posts', array(
 			'id' => array('constraint' => 11, 'type' => 'int', 'auto_increment' => true),
-			'idea_id' => array('constraint' => 11, 'type' => 'int'),
-			'comment' => array('type' => 'text'),
+			'title' => array('type' => 'text'),
+			'body' => array('type' => 'text'),
 			'created_at' => array('constraint' => 11, 'type' => 'int'),
 			'updated_at' => array('constraint' => 11, 'type' => 'int'),
 
@@ -18,6 +18,6 @@ class Create_idea_comments
 
 	public function down()
 	{
-		\DBUtil::drop_table('idea_comments');
+		\DBUtil::drop_table('posts');
 	}
 }

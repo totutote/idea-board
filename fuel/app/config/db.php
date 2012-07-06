@@ -5,6 +5,23 @@
  * See the individual environment DB configs for specific config information.
  */
 
+/*
+return array(
+	'default' => array(
+		'type'  => 'mysql',
+		'connection'	=> array(
+			'hostname'		=> 'localhost',
+			'port'			=> '3306',
+			'database'		=> 'idea_board_dev',
+			'username'		=> 'root',
+			'password'		=> 'root',
+		),
+		'table_prefix' => 'ap_',
+	),
+);
+*/
+
+
 return array(
 	'active' => 'default',
 
@@ -16,7 +33,7 @@ return array(
 		'connection'  => array(
 			'persistent' => false,
 		),
-		'identifier'   => '`',
+		'identifier'   => '',
 		'table_prefix' => '',
 		'charset'      => 'utf8',
 		'enable_cache' => true,
@@ -31,3 +48,6 @@ return array(
 	),
 
 );
+
+
+
