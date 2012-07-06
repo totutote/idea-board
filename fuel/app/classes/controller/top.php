@@ -23,8 +23,8 @@ class Controller_Top extends Controller_Base
 
 	public function action_ideapost()
 	{
-		$this->template->title = 'Top &raquo; idealist';
-		$this->template->content = View::forge('top/idealist');
+		$this->template->title = 'Top &raquo; ideapost';
+		$this->template->content = View::forge('top/ideapost');
 	}
 
 	public function action_postcomfilm()
@@ -32,6 +32,5 @@ class Controller_Top extends Controller_Base
 		$this->template->title = 'Top &raquo; idealist';
 		$this->template->content = View::forge('top/idealist');
 	}
-
 
 }

@@ -8,7 +8,6 @@
         <?php echo Asset::js('jquery-1.7.2.min.js'); ?>
         <?php echo Asset::js('bootstrap.js'); ?>
 
-
 	<style>
 		body { margin: 40px; }
 	</style>
@@ -17,17 +16,17 @@
     <div class="navbar">
     <div class="navbar-inner">
     <div class="container">
-     
+
     <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
     </a>
-     
+
     <!-- Be sure to leave the brand out there if you want it shown -->
      <?php echo Html::anchor('top', 'Idea Board', array("class"=>"brand")); ?>
-     
+
     <!-- Everything you want hidden at 940px or less, place within here -->
     <div class="nav-collapse">
     <!-- .nav, .navbar-search, .navbar-form, etc -->
@@ -35,7 +34,7 @@
           <li class="active"><?php echo Html::anchor('top', 'Home'); ?></li>
           <li><?php echo Html::anchor('top/idealist', 'IdeaList'); ?></li>
           <li><a href="#contact">IdeaMans</a></li>
-          <li><a href="#contact">IdeaPost</a></li>
+          <li><?php echo Html::anchor('top/ideapost', 'IdeaPost'); ?></li>
         </ul>
 
           <div class="btn-group pull-right">
